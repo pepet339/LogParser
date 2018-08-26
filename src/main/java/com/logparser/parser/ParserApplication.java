@@ -27,7 +27,7 @@ public class ParserApplication implements CommandLineRunner {
 			logger.error("Provide log file path as program parameter");
 			System.exit(-1);
 		}
-		LogParser parser = new LogParser(new LogEventBatchDao(), args[1]);
+		LogParser parser = new LogParser(new LogEventBatchDao(), args[0]);
 		parser.execute();
 	}
 
